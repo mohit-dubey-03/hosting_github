@@ -1,0 +1,21 @@
+name: Email Action Demo
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: mohit.dubey@gramener.com
+        run: echo "Hello, world!"
+      
+      - name: Run additional step
+        run: |
+          echo "Running additional commands"
+          date
